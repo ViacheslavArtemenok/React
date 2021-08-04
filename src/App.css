@@ -1,0 +1,215 @@
+body{
+  height: 100vh;
+}
+input{
+  outline: none;
+}
+.App {
+  text-align: center;
+}
+.Message{
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Message-header {
+  background-color: #343428;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App-name{
+  color: aquamarine;
+}
+.ChatWrapper{
+  max-width: 1200px;
+  margin: 10px auto 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.EdgeMenu{
+  position: relative;
+  font-size: 14px;
+  color: aquamarine;
+  border-radius: 10px 0px 0px 10px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px black;
+  min-width: 300px;
+  height: max-content;
+}
+.EdgeMenuList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0px;
+}
+.EdgeMenuItem{
+  list-style-type: none;
+  font-size: 14px;
+  color: aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px black;
+  transition: all 0.25s;
+}
+.EdgeMenuItem:hover{
+  background-color: #393e49;
+  color: #61dafb;
+}
+.EdgeMenuHider{
+  position: absolute;
+  top: 0px;
+  right: -22px;
+  height: 100%;
+  width: 46px;
+  background-color: #282c34;
+  border-radius: 0px;
+}
+.ChatBox{
+  box-shadow: 0px 0px 20px black;
+  border-radius: 0px 20px 20px 20px;
+  margin: 0px;
+  padding: 30px;
+  box-sizing: border-box;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  }
+.ChatTittle{
+  font-size: 14px;
+  color: #61dafb;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px black;
+}
+.ChatCoat{
+  position: relative;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 500px;
+  }
+.Chat{
+  border-radius: 20px;
+  padding: 30px 20px 450px 20px;
+  box-sizing: border-box;
+  height: 10px;
+  overflow:auto;
+  display: flex;
+  flex-direction: column;
+}
+.ChatHider{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  min-height: 499px;
+  width: 28px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #282c34;
+  z-index: 3;
+}
+.ChatMessageLeft{
+  box-shadow: 0px 0px 10px #61dafb;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #61dafb;
+  align-self: flex-start;
+  width: 200px;
+  margin: 0px 0px 30px;
+  background-color:#282c34;
+  }
+.ChatMessageRight{
+  box-shadow: 0px 0px 10px aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+   box-sizing: border-box;
+  font-size: 14px;
+  color: aquamarine;
+  align-self: flex-end;
+  width: 200px;
+  margin: 0px 0px 30px;
+  background-color:#282c34;
+    }
+.ChatPannel{
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  gap: 10px;
+  margin: 14px 0px;
+}
+.ChatInput{
+  width: 100%;
+  font-size: 14px;
+  color: aquamarine;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: #282c34;
+  outline: none;
+  align-self: flex-start;
+ }  
+
+.ChatButtonInt{
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 14px;
+  color: aquamarine;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #282c34;
+  outline: none;
+  text-align: center;
+  max-width: 120px;
+  margin: 1px;
+  transition: all 0.25s;
+  }
+  .ChatButtonInt:hover{
+    background-color: #393e49;
+  }
