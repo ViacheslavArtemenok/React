@@ -1,0 +1,466 @@
+body {
+  height: 100vh;
+}
+input {
+  outline: none;
+}
+.App {
+  text-align: center;
+}
+.Message {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Message-header {
+  background-color: #343428;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App-name {
+  color: aquamarine;
+}
+.ChatWrapper {
+  max-width: 1400px;
+  margin: 10px auto 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.EdgeMenu {
+  position: relative;
+  font-size: 14px;
+  color: aquamarine;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  min-width: 300px;
+  height: max-content;
+}
+.EdgeMenuList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0px;
+}
+.EdgeMenuItem {
+  list-style-type: none;
+  font-size: 14px;
+  color: aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px black;
+  transition: all 0.25s;
+  list-style-type: none;
+  text-decoration: none;
+  flex-grow: 1;
+  background-color: #282c34;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.EdgeMenuItem:hover {
+  background-color: #393e49;
+  color: #61dafb;
+}
+.EdgeMenuItemP{
+  margin: 0px;
+  padding: 0px;
+}
+.Alarm{
+width: 10px;
+height: 10px;
+background-color: aquamarine;
+border-radius: 50px;
+margin: 0px;
+}
+
+.LinkBlock{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.ChatButtonLink{
+ box-sizing: border-box;
+ padding: 4px;
+ font-size: 14px;
+ color: #1d2025;
+ border-radius: 20px;
+ background-color: #282c34;
+ outline: none;
+ text-align: center;
+ transition: all 0.25s;
+ border: solid;
+}
+.ChatButtonLink:hover {
+  background-color: #393e49;
+  color: aquamarine;
+}
+
+.ChatBox {
+   margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+}
+@media(max-width: 1430px){
+  .ChatBox { 
+  width: 100vw;
+  max-width: 400px;
+  }
+  .ChatMessageLeft {
+    max-width: 200px;
+  }
+  .ChatMessageRight {
+    max-width: 200px;
+  }
+}
+@media(max-width: 1150px){
+  .ChatWrapper {
+    max-width: 1400px;
+    margin: 10px auto 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.ChatTittle {
+  font-size: 14px;
+  color: #61dafb;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px black;
+}
+.ChatCoat {
+  position: relative;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 500px;
+}
+.Chat {
+  border-radius: 20px;
+  padding: 30px 20px 450px 20px;
+  box-sizing: border-box;
+  height: 10px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.ChatHider {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  min-height: 499px;
+  width: 28px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #282c34;
+  z-index: 3;
+}
+.ChatMessageLeft {
+  position: relative;
+  box-shadow: 0px 0px 10px #61dafb;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #61dafb;
+  align-self: flex-start;
+  width: 400px;
+  margin: 0px 0px 40px;
+  background-color: #282c34;
+}
+.ChatMessageRight {
+  position: relative;
+  box-shadow: 0px 0px 10px aquamarine;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: aquamarine;
+  align-self: flex-end;
+  width: 400px;
+  margin: 0px 0px 40px;
+  background-color: #282c34;
+}
+.MesInfo{
+  position: absolute;
+  bottom: -24px;
+  left: 4px;
+  font-size: 8px;
+  color: rgb(146, 146, 146);
+}
+.ChatPannel {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  gap: 10px;
+  margin: 14px 0px;
+}
+.ChatInput {
+  width: 100%;
+  font-size: 14px;
+  color: aquamarine;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: #282c34;
+  outline: none;
+  align-self: flex-start;
+}
+
+.ChatButtonInt {
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 14px;
+  color: aquamarine;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #282c34;
+  outline: none;
+  text-align: center;
+  max-width: 120px;
+  margin: 1px;
+  transition: all 0.25s;
+}
+.ChatButtonInt:hover {
+  background-color: #393e49;
+}
+.App-footer {
+  background-color: #282c34;
+  font-size: 14px;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px 0px;
+}
+.NamePanelBox{
+  max-width: 400px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.NamePanel{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin: 10px 0px 0px;
+}
+.ChatInputName{
+  font-size: 14px;
+  width: 100%;
+  min-width: 200px;
+  color: aquamarine;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: #282c34;
+  outline: none;
+  flex-grow: 1;
+}
+.ChatTittleName {
+  font-size: 12px;
+  color: aquamarine;
+  border-radius: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+  min-width: max-content;
+ }
+ .TittleLink{
+  text-decoration: none;
+  transition: all 0.25s;
+ }
+ .TittleLink:hover{
+  background-color: #393e49;
+ }
+ .ProfileImg{
+   max-width: 50px;
+   height: auto;
+   border-radius: 500px;
+ }
+ .ProfileClose{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  }
+ .ProfileClose:hover .ProfileCloseImg{
+  opacity: 0.5;
+  transition: all 0.2s;
+ }
+ .ProfileCloseImg{
+  max-width: 20px;
+  height: auto;
+ }
+ .ProfileBlockInputCoat{
+   margin: 0px auto;
+   position: absolute;
+   width: 100vw;
+   height: 132vh;
+   background-color: rgba(127, 255, 212, 0.329);
+   top: 0px;
+    left: 0px;
+   z-index: 8;
+  }
+ .ProfileBlockInput{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+   margin: 240px auto;
+   box-sizing: border-box;
+   padding: 0px 60px 25px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   width: 600px;
+   height: 600px;
+   background-color: #393e49;
+ }
+ .InputReg{
+  list-style-type: none;
+  font-size: 14px;
+  color: aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px black;
+  transition: all 0.25s;
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #282c34;
+ }
+ .ProfileHider{
+  display: none;
+ }
+ .ProfileBlock{
+  margin: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px black;
+  padding: 20px;
+  transition: all 0.25s;
+}
+.ProfileBlock:hover{
+  background-color: #393e49;
+}
+.ProfileBlockItem{
+  font-size: 14px;
+  color: aquamarine;
+}
+.ProfileBlockItemSpan{
+  font-size: 14px;
+  color: white;
+}
+.ProfileBlockItem:first-child{
+  align-self: center;
+}
+.AddAvatar{
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px black;
+  transition: all 0.25s;
+  background-color: #282c34;
+}
+.AvaOpen{
+  color: aquamarine;
+}
+.AvaClosed{
+  color: #61dafb;
+}
+.AddAvatar:hover{
+  background-color:#393e49;
+}
+.AvatarBlock{
+  position: absolute;
+  top: 180px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #282c34;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+.AvatarImg{
+  max-width: 50px;
+  height: auto;
+  border-radius: 500px;
+}
+.AvatarImg:hover{
+  box-shadow: 0px 0px 25px aquamarine;
+}
